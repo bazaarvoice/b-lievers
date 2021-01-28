@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bazaarvoice.github.io/bv-support-local",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -9,10 +10,13 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "aperture": "git+ssh://git@github.com:bazaarvoice/aperture"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
