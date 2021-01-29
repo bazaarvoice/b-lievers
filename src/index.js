@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './index.css';
+import MenuDropdown from '@bv/aperture-components-react-menu-dropdown';
+import image from './logo.png';
+
 
 if (process.env.NODE_ENV !== 'production') {
   const axe = require('react-axe');
@@ -10,31 +13,27 @@ if (process.env.NODE_ENV !== 'production') {
 const App = () => (
   <main>
     <header>
-      <h1>React Parcel Quick Start</h1>
-      <h2>A lightweight project using React & Parcel.</h2>
-      <h3>Fork this repo & build on.</h3>
+      <div className="title_container"><img src={image} className="logo"/><h1 className="title">BV Support Local</h1></div>
     </header>
-    <section>
-      <p>
-        A few extra niceties have been added & configured, feel free to remove.
-      </p>
-      <ul>
-        <li>
-          React-axe: accessibility auditing & guidance during development (
-          <strong>not required or instantiated for production</strong>).
-        </li>
-        <li>Node sass</li>
-      </ul>
+    <section className="section1">
+        <MenuDropdown
+          onChange={(updatedOption, updatedOptions) => {
+            /* ... */
+          }}
+          options={[
+            { value: 'us-texas', label: 'Texas', selected: false },
+            { value: 'india-karnataka', label: 'Karnataka', selected: false },
+            { value: 'northern-ireland', label: 'Northern Ireland', selected: true }
+          ]}
+          searchAriaLabel="search"
+        />
+    </section>
+    <section className="section2">
+      <article>
+        <div className="review_container">Refill Quarter &nbsp;<div data-bv-show="rating_summary" data-bv-product-id="refill-quarter"></div></div>
+      </article>
     </section>
     <footer>
-      For more information or questions, check out:{' '}
-      <a
-        target='_blank'
-        rel='noopener noreferrer'
-        href='https://www.thejoecodes.com/'
-      >
-        The Joe Codes.
-      </a>
     </footer>
   </main>
 );
