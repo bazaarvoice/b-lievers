@@ -1,81 +1,40 @@
 {
-  "homepage": "https://bazaarvoice.github.io/bv-support-local/",
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "aperture": "git+ssh://git@github.com:bazaarvoice/aperture",
-    "babel-plugin-require-context-hook": "^1.0.0",
-    "c3": "0.4.11",
-    "classnames": "2.2.5",
-    "d3": "3.5.17",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
-    "eslint-plugin-react-hooks": "^1.0.0",
-    "fixed-data-table": "^0.6.5",
-    "glamor": "2.20.25",
-    "i18next": "11.3.2",
-    "lodash": "^4.17.1",
-    "moment": "2.22.1",
-    "numbro": "1.9.3",
-    "react": "^17.0.1",
-    "react-autocomplete": "^1.8.1",
-    "react-button": "1.2.1",
-    "react-color": "^2.17.0",
-    "react-datepicker": "^1.8.0",
-    "react-document-title": "^2.0.3",
-    "react-dom": "^17.0.1",
-    "react-dropzone": "^3.13.4",
-    "react-i18next": "7.6.1",
-    "react-icon-base": "^2.1.2",
-    "react-icons": "^2.2.7",
-    "react-is-deprecated": "^0.1.2",
-    "react-loading-skeleton": "^0.5.0",
-    "react-portal": "^3.2.0",
-    "react-quill": "^1.3.3",
-    "react-scripts": "4.0.1",
-    "react-scroll-up": "^1.3.3",
-    "react-select": "^1.3.0",
-    "react-select-fast-filter-options": "0.2.3",
-    "react-tabs": "^3.0.0",
-    "react-tooltip": "3.5.1",
-    "react-virtualized": "9.18.0",
-    "react-virtualized-select": "3.1.3",
-    "reflexbox": "^4.0.6",
-    "require-ensure-shim": "1.0.4",
-    "store": "1.3.20",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "react-parcel-quick-start",
+  "version": "1.0.0",
+  "description": "Lightweight project foundation using React & Parcel",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "parcel src/index.html",
+    "build": "rm -rf build && parcel build src/index.html --out-dir dist --no-source-maps --no-cache",
+    "serve": "npm run build && parcel serve dist/index.html"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyMcFadden/react-parcel-quick-start.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "react",
+    "parcel",
+    "accessible",
+    "react-axe"
+  ],
+  "author": "The Joe Codes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnnyMcFadden/react-parcel-quick-start/issues"
+  },
+  "homepage": "https://github.com/JohnnyMcFadden/react-parcel-quick-start#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "node": "^14.14.0",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "react-axe": "^3.5.4"
   }
 }
