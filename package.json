@@ -1,16 +1,18 @@
 {
-  "name": "react-parcel-quick-start",
+  "name": "bv-support-local",
   "version": "1.0.0",
-  "description": "Lightweight project foundation using React & Parcel",
+  "description": "Web App supporting local businesses/social enterprises",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html",
+    "deploy": "gh-pages -d dist",
     "build": "rm -rf build && parcel build src/index.html --out-dir dist --no-source-maps --no-cache",
     "serve": "npm run build && parcel serve dist/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohnnyMcFadden/react-parcel-quick-start.git"
+    "url": "git+https://github.com/bazaarvoice/bv-support-local"
   },
   "keywords": [
     "react",
@@ -18,12 +20,8 @@
     "accessible",
     "react-axe"
   ],
-  "author": "The Joe Codes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JohnnyMcFadden/react-parcel-quick-start/issues"
-  },
-  "homepage": "https://github.com/JohnnyMcFadden/react-parcel-quick-start#readme",
+  "author": "b-lievers",
+  "homepage": "https://bazaarvoice.github.io/bv-support-local",
   "dependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
@@ -32,6 +30,7 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
+    "gh-pages": "^1.2.0",
     "node": "^14.14.0",
     "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4",
