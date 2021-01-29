@@ -70,3 +70,6 @@ typings/
 
 # intelij files
 .idea
+
+# misc
+.DS_Store
