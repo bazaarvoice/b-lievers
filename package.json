@@ -4,10 +4,10 @@
   "description": "Web App supporting local businesses/social enterprises",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "predeploy": "rm -rf dist && parcel build src/index.html",
+    "start": "parcel src/index.html",  
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url /bv-support-local",
     "deploy": "gh-pages -d dist",
-    "build": "rm -rf build && parcel build src/index.html --out-dir digit st --no-source-maps --no-cache",
+    "build": "rm -rf build && parcel build src/index.html --out-dir dist --no-source-maps --no-cache",
     "serve": "npm run build && parcel serve dist/index.html"
   },
   "repository": {
