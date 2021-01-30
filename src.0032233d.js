@@ -21,7 +21,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"@reach/menu-button/styles.css":"D2h7","@bv/aperture-components-react-search-bar/dist/index.css":"n9pH"}],"vKFU":[function(require,module,exports) {
 
 },{"@bv/aperture-components-react-menu-dropdown/dist/index.css":"UTdh"}],"ycK8":[function(require,module,exports) {
-module.exports="/Logo.a4a9a3b5.png";
+module.exports="/bv-support-local/Logo.a4a9a3b5.png";
 },{}],"iNXs":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=r(require("react")),t=r(require("./Logo.png"));function r(e){return e&&e.__esModule?e:{default:e}}function a(){return e.default.createElement("div",{className:"title_container"},e.default.createElement("img",{src:t.default,className:"logo"}),e.default.createElement("h1",{className:"title"},"BV Support Local"))}var l=a;exports.default=l;
 },{"react":"n8MK","./Logo.png":"ycK8"}],"zIBZ":[function(require,module,exports) {
@@ -69,3 +69,4 @@ var e=["input","select","textarea","a[href]","button","[tabindex]","audio[contro
 },{"react":"n8MK","@bv/aperture-components-react-menu-dropdown":"njqT"}],"Focm":[function(require,module,exports) {
 "use strict";var e=r(require("react")),t=r(require("react-dom"));require("./index.css");var l,a=r(require("./Header")),u=r(require("./BusinessSummary")),n=r(require("./CountryDropDown"));function r(e){return e&&e.__esModule?e:{default:e}}var c=function(){return e.default.createElement("main",null,e.default.createElement("header",null,e.default.createElement(a.default,null)),e.default.createElement("section",{className:"section1"},e.default.createElement(n.default,null)),e.default.createElement("section",{className:"section2"},e.default.createElement("article",null,e.default.createElement(u.default,null))),e.default.createElement("footer",null))},d=function(){return e.default.createElement("main",null,e.default.createElement("header",null,e.default.createElement(a.default,null)),e.default.createElement("section",null),e.default.createElement("footer",null))},f=document.getElementById("root");t.default.render(e.default.createElement(c,null),f);
 },{"react":"n8MK","react-dom":"NKHc","./index.css":"vKFU","./Header":"iNXs","./BusinessSummary":"zIBZ","./CountryDropDown":"oOv4"}]},{},["Focm"], null)
+//# sourceMappingURL=/bv-support-local/src.0032233d.js.map
