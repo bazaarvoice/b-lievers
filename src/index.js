@@ -5,6 +5,12 @@ import Header from './Header';
 import BusinessEntry from './BusinessEntry';
 import CountriesDropdown from './CountriesDropdown';
 import MapContainer from './MapContainer';
+import RefillQuarterImage from '/refill-quarter.jpg'
+import ThreeEightSevenOrmeauRoadImage from '/387-ormeau-road.jpeg'
+import FiveACafeImage from '/5a-cafe.jpg'
+import MaggieMaysImage from './maggie-mays.jpg'
+import SloansGymImage from './sloans-gym.jpg'
+import WardAndCoFineFoods from './ward-and-co.png'
 
 if (process.env.NODE_ENV !== 'production') {
   const axe = require('react-axe');
@@ -16,20 +22,26 @@ const Home = () => (
     <header>
       <Header/>
     </header>
+    <div className="scrollable">
+    <div className="content">
     <section className="section1">
       <CountriesDropdown/>
     </section>
     <section className="section2">
-      <BusinessEntry name={"Refill Quarter"} id={"refill-quarter"} url={"https://www.refillquarter.com/"} description={"Zero Waste Shop"} lat={54.6005073} lng={-5.8763364} recomender="Laura McCormick"/>
-      <BusinessEntry name={"387 Ormeau Road"} id={"387-ormeau-road"} url={"https://www.facebook.com/387ormeauroad/"} description={"Café"} lat={54.5775032} lng={-5.9187322} recomender="Laura McCormick"/>
-      <BusinessEntry name={"5a Café"} id={"5a-cafe"} url={"http://www.generalmerchants.co.uk/stranmillis/"} description={"Café"} lat={54.5732863} lng={-5.9321933} recomender="Dawn Bell"/>
-      <BusinessEntry name={"Maggie Mays"} id={"maggie-mays"} url={"https://maggiemaysbelfastcafe.co.uk/city-centre-cafe/"} description={"Café"} lat={54.5878742} lng={-5.932703} recomender="Iona McAtackney"/>
-      <BusinessEntry name={"Sloans Gym"} id={"sloans-gym"} url={"https://www.sloansgymbelfast.com/"} description={"Gym"} lat={54.5993876} lng={-5.9330676} recomender="Jack O'Hara"/>
-      <BusinessEntry name={"Ward & Co Fine Foods"} id={"ward-and-co-fine-foods"} url={"https://wardand.co/"} description={"Artisan Deli"} lat={54.5732804} lng={-5.9320405} recomender="Dawn Bell"/>
+      <MapContainer id="footer_map" className="bv_map" name="refill-quarter" lat={54.597285} lng={-5.93012} containerWidth={"90%"}/>
     </section>
-    <footer>
-      <MapContainer id="footer_map" className="bv_map" name="refill-quarter" lat={54.6005073} lng={-5.8763364} width={"30%"}/>
-    </footer>
+    <section className="section3">
+      <div className="gallery">
+      <BusinessEntry name={"Refill Quarter"} id={"refill-quarter"} url={"https://www.refillquarter.com/"} description={"Zero Waste Shop"} recomender="Laura McCormick" image={RefillQuarterImage}/>
+      <BusinessEntry name={"387 Ormeau Road"} id={"387-ormeau-road"} url={"https://www.facebook.com/387ormeauroad/"} description={"Café"} recomender="Laura McCormick" image={ThreeEightSevenOrmeauRoadImage}/>
+      <BusinessEntry name={"5a Café"} id={"5a-cafe"} url={"http://www.generalmerchants.co.uk/stranmillis/"} description={"Café"}  recomender="Dawn Bell" image={FiveACafeImage}/>
+      <BusinessEntry name={"Maggie Mays"} id={"maggie-mays"} url={"https://maggiemaysbelfastcafe.co.uk/city-centre-cafe/"} description={"Café"}  recomender="Iona McAtackney" image={MaggieMaysImage}/>
+      <BusinessEntry name={"Sloans Gym"} id={"sloans-gym"} url={"https://www.sloansgymbelfast.com/"} description={"Gym"} recomender="Jack O'Hara" image={SloansGymImage}/>
+      <BusinessEntry name={"Ward & Co Fine Foods"} id={"ward-and-co-fine-foods"} url={"https://wardand.co/"} description={"Artisan Deli"} recomender="Dawn Bell" image={WardAndCoFineFoods}/>
+      </div>
+    </section>
+    </div>
+    </div>
   </main>
 );
 
