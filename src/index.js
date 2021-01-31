@@ -4,6 +4,7 @@ import './index.css';
 import Header from './Header';
 import BusinessEntry from './BusinessEntry';
 import CountriesDropdown from './CountriesDropdown';
+import MapContainer from './MapContainer';
 
 if (process.env.NODE_ENV !== 'production') {
   const axe = require('react-axe');
@@ -25,6 +26,19 @@ const Home = () => (
       <BusinessEntry name={"Maggie Mays"} id={"maggie-mays"} url={"https://maggiemaysbelfastcafe.co.uk/city-centre-cafe/"} description={"Café"} lat={54.5878742} lng={-5.932703} recomender="Iona McAtackney"/>
       <BusinessEntry name={"Sloans Gym"} id={"sloans-gym"} url={"https://www.sloansgymbelfast.com/"} description={"Gym"} lat={54.5993876} lng={-5.9330676} recomender="Jack O'Hara"/>
       <BusinessEntry name={"Ward & Co Fine Foods"} id={"ward-and-co-fine-foods"} url={"https://wardand.co/"} description={"Artisan Deli"} lat={54.5732804} lng={-5.9320405} recomender="Dawn Bell"/>
+    </section>
+    <footer>
+      <MapContainer id="footer_map" className="bv_map" name="refill-quarter" lat={54.6005073} lng={-5.8763364} width={"30%"}/>
+    </footer>
+  </main>
+);
+
+const BusinessDisplayPage = () => (
+  <main>
+    <header>
+      <Header/>
+    </header>
+    <section>
     </section>
     <footer>
     </footer>
