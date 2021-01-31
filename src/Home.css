@@ -1,0 +1,24 @@
+.section1 {
+    margin-top: 20px;
+  }
+  
+  .section2 {
+    margin-top: 20px;
+    height: 400px;
+  }
+  
+  .section3 {
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+  }
+  
+  
+  .gallery {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border:1px solid #33415c; */
+    justify-content: flex-start;
+  }

@@ -1,0 +1,38 @@
+@import '@bv/aperture-components-react-menu-dropdown/dist/index.css';
+
+:root {
+  --background: white;
+  --font-color: #002e6e;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font-color);
+  font-size: 1rem;
+  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+  margin: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  display:flex; 
+  height: 80px;
+}
+
+.scrollable {
+  top: 80px;
+  left:0px; 
+  right:0px; 
+  bottom:0px;
+  position: absolute;
+  overflow-y:scroll;
+}
+
+.content_container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+
