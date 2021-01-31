@@ -1,7 +1,7 @@
 import React from 'react';
-import './BusinessSummary.css';
+import './BusinessCard.css';
 
-class BusinessSummary extends React.Component {
+class BusinessCard extends React.Component {
   render(){
     return (
       <article>
@@ -16,4 +16,4 @@ class BusinessSummary extends React.Component {
   }
 }
 
-export default BusinessSummary
+export default BusinessCard

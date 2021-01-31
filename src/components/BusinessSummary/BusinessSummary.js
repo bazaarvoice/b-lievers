@@ -1,8 +1,8 @@
 import React from 'react';
-import MapContainer from './MapContainer'
-import './BusinessDisplay.css';
+import MapContainer from '../MapContainer/MapContainer'
+import './BusinessSummary.css';
 
-class BusinessDisplay extends React.Component {
+class BusinessSummary extends React.Component {
   render(){
     return (
       <article className="business_display_article">
@@ -19,4 +19,4 @@ class BusinessDisplay extends React.Component {
   }
 }
 
-export default BusinessDisplay
+export default BusinessSummary

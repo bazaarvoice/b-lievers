@@ -1,0 +1,14 @@
+.countries_dropdown_section {
+    margin-top: 20px;
+  }
+  
+.country_map_section {
+margin-top: 20px;
+height: 400px;
+}
+  
+.business_cards_section {
+margin-top: 20px;
+display: flex;
+/* justify-content: center; */
+}
