@@ -56,20 +56,6 @@ const BusinessDisplayPage = () => (
   </main>
 );
 
-const BusinessDisplayPage1 = () => (
-  <main>
-    <header>
-      <Header/>
-    </header>
-    <section>
-      <BusinessDisplay name={"Refill Quarter"} id={"refill-quarter"} url={"https://www.refillquarter.com/"} description={"Zero Waste Shop"} recomender="Laura McCormick" image={RefillQuarterImage}/>
-      <div data-bv-show="reviews" data-bv-product-id="refill-quarter"></div>
-    </section>
-    <footer>
-    </footer>
-  </main>
-);
-
 const root = document.getElementById('root');
 
-ReactDOM.render(<Test/>, root);
+ReactDOM.render(<HomePage/>, root);
