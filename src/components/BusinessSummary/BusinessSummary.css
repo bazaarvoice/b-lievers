@@ -1,43 +1,35 @@
-  .business_name {
+  .summary_business_name {
     margin: 0;
     padding-top: 15px;
-    padding-left: 15px;
   }
 
-  .business_image {
-    padding: 15px;
-    object-fit: cover;
+  .summary_business_image {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     width: 400px;
     height: 400px;
   }
 
-  h2 {
-    margin: 0;
-    font-size: 1rem;
+  .summary_recommender {
     font-family: "canada-type-gibson", sans-serif;
     font-style: normal;
-    color: #2F3744;
-  }
-
-  .recommender {
+    margin: 0;
+    font-size: 1rem;
     padding-top: 15px;
-    padding-left: 15px;
     color: grey;
   }
 
-  .name {
+  .summary_name {
     color: #2F3744;
   }
 
-  .business_display_article {
+  .business_summary_article {
     display:flex; 
     flex-direction: row;
-    border:1px solid #33415c;
+    /* border:1px solid #33415c; */
     align-content: flex-start;
     margin-bottom: 20px;
-    margin-right:10px;
-    margin-left:10px;
-    border-radius: 10px;
   }
 
 

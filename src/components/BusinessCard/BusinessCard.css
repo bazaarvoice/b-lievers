@@ -1,46 +1,38 @@
-  .reviews {
-    padding-top: 15px;
-    padding-left: 15px;
+  .card_reviews {
+    padding-top: 5px;
   }
 
-  .business_name {
+  .card_business_name {
     margin: 0;
-    padding-top: 15px;
-    padding-left: 15px;
   }
 
-  .business_image {
-    padding: 15px;
+  .card_business_image {
+    padding-top: 5px;
     object-fit: cover;
     width: 400px;
     height: 400px;
   }
 
-  h2 {
+  .card_recommender {
     margin: 0;
     font-size: 1rem;
     font-family: "canada-type-gibson", sans-serif;
     font-style: normal;
-    color: #2F3744;
-  }
-
-  .recommender {
-    padding-top: 15px;
-    padding-left: 15px;
+    padding-top: 5px;
     color: grey;
   }
 
-  .name {
+  .card_name {
     color: #2F3744;
   }
 
-  article {
+  .business_card_article {
     display:flex; 
     flex-direction: column;
-    border:1px solid #33415c;
+    /* border:1px solid #33415c; */
     align-content: flex-start;
-    margin-bottom: 20px;
-    margin-right:10px;
-    margin-left:10px;
-    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-right:20px;
+    margin-left:20px;
+    /* border-radius: 10px; */
   }
